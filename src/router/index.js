@@ -33,7 +33,11 @@ export default new VueRouter({
             children:[
                 {
                     path: '',         //如果沒有填入入境，元件child1預設會是主頁
-                    name: 'child 1',    
+                    name: 'child 1', 
+                    // components:{
+                    //     default:child,
+                    //     menu:Menu, 
+                    // },
                     component: child    
                 }, 
                 {
@@ -42,6 +46,7 @@ export default new VueRouter({
                     component: child2    
                 }, 
                 {
+                    // path: 'child/:id', id是動態
                     path: 'child3',      
                     name: 'child 3',     
                     component: child3    

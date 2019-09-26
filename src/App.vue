@@ -15,7 +15,7 @@
     </nav>
     <!-- <i mg alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <!-- <router-view name="menu"></router-view> -->
+    <router-view name="menu"></router-view>
     <div class="container">
       <router-view></router-view>
     </div>
@@ -33,4 +33,6 @@ export default {
 };
 </script>
 
-
+<style lang="scss">
+  
+</style>
