@@ -2,8 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App.vue'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+import axios from 'axios'  //主要AJAX套件
+import VueAxios from 'vue-axios'  //將它轉為Vue套件
 import router from './router'
 
 Vue.use(VueAxios, axios)

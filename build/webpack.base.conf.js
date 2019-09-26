@@ -22,6 +22,7 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  // 可以省略副檔名
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -45,7 +46,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          limit: 10000,
+          limit: 10000, //10kb
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },
